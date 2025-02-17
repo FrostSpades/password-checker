@@ -44,7 +44,7 @@ if __name__ == '__main__':
     user_password = input("Enter your password: ")
     user_password_weaknesses = check_password(user_password)
 
-    if len(user_password_weaknesses) > 0:
+    if len(user_password_weaknesses) == 0:
         print("Password is strong")
     else:
         print(user_password_weaknesses)
